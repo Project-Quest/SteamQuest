@@ -30,3 +30,9 @@ Server starts in port 8080 by default. Have fun.
 ## Deployed at
 
 https://steamq.herokuapp.com
+
+## Media
+
+- [Teaser](https://youtu.be/bjGpQeAFXK0)
+- [Trailer](https://youtu.be/mNRTz_eocjc)
+- [Demo](https://youtu.be/QePXaPNqZp0)
