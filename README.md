@@ -22,10 +22,10 @@ Server starts in port 8080 by default. Have fun.
 
 ## Team
 
-- Vishal
-- Ashwin
-- Shyam
-- Robin
+- [Vishal](https://github.com/Nightmare99)
+- [Ashwin](https://github.com/ashwin2706)
+- [Shyam](https://github.com/shyam2520)
+- [Robin](https://github.com/TheRealHazzard)
 
 ## Deployed at
 
