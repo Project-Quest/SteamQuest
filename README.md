@@ -33,6 +33,6 @@ https://steamq.herokuapp.com
 
 ## Media
 
-- [Teaser](https://youtu.be/bjGpQeAFXK0)
+- [Teaser](https://www.youtube.com/watch?v=Izfsxg3U_VA)
 - [Trailer](https://youtu.be/mNRTz_eocjc)
 - [Demo](https://youtu.be/QePXaPNqZp0)
