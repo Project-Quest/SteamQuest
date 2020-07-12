@@ -1,0 +1,2230 @@
+/* Used For SteamQuest */
+
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+/* line 5 SteamQuest/HTML/scss/theme-default.scss */
+body {
+  font-family: "Muli", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12 SteamQuest/HTML/scss/theme-default.scss */
+.img {
+  max-width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 16 SteamQuest/HTML/scss/theme-default.scss */
+a,
+.button {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 20 SteamQuest/HTML/scss/theme-default.scss */
+a:focus,
+.button:focus, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 25 SteamQuest/HTML/scss/theme-default.scss */
+a:focus {
+  text-decoration: none;
+}
+
+/* line 28 SteamQuest/HTML/scss/theme-default.scss */
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  text-decoration: none;
+}
+
+/* line 34 SteamQuest/HTML/scss/theme-default.scss */
+a,
+button {
+  color: #1F1F1F;
+  outline: medium none;
+}
+
+/* line 39 SteamQuest/HTML/scss/theme-default.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+  color: #1F1F1F;
+}
+
+/* line 43 SteamQuest/HTML/scss/theme-default.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+/* line 52 SteamQuest/HTML/scss/theme-default.scss */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 56 SteamQuest/HTML/scss/theme-default.scss */
+li {
+  list-style: none;
+}
+
+/* line 59 SteamQuest/HTML/scss/theme-default.scss */
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #727272;
+  margin-bottom: 13px;
+  font-family: "Muli", sans-serif;
+}
+
+/* line 68 SteamQuest/HTML/scss/theme-default.scss */
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 74 SteamQuest/HTML/scss/theme-default.scss */
+*::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 79 SteamQuest/HTML/scss/theme-default.scss */
+::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 84 SteamQuest/HTML/scss/theme-default.scss */
+::selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 89 SteamQuest/HTML/scss/theme-default.scss */
+*::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 94 SteamQuest/HTML/scss/theme-default.scss */
+*:-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 99 SteamQuest/HTML/scss/theme-default.scss */
+*::-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 104 SteamQuest/HTML/scss/theme-default.scss */
+*::placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 110 SteamQuest/HTML/scss/theme-default.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 114 SteamQuest/HTML/scss/theme-default.scss */
+.mb-70 {
+  margin-bottom: 73px;
+}
+
+@media (max-width: 767px) {
+  /* line 114 SteamQuest/HTML/scss/theme-default.scss */
+  .mb-70 {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 121 SteamQuest/HTML/scss/theme-default.scss */
+.black-bg {
+  background: #020c26 !important;
+}
+
+/* line 125 SteamQuest/HTML/scss/theme-default.scss */
+.white-bg {
+  background: #ffffff;
+}
+
+/* line 128 SteamQuest/HTML/scss/theme-default.scss */
+.gray-bg {
+  background: #f5f5f5;
+}
+
+
+/* line 144 SteamQuest/HTML/scss/theme-default.scss */
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 148 SteamQuest/HTML/scss/theme-default.scss */
+.overlay::before {
+  position: absolute;
+  content: "";
+  background-color: #1F1F1F;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+
+/* line 160 SteamQuest/HTML/scss/theme-default.scss */
+.overlay2 {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 164 SteamQuest/HTML/scss/theme-default.scss */
+.overlay2::before {
+  position: absolute;
+  content: "";
+  background-color: #2C2C2C;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* line 176 SteamQuest/HTML/scss/theme-default.scss */
+.overlay_03 {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 180 SteamQuest/HTML/scss/theme-default.scss */
+.overlay_03::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2C2C2C;
+  opacity: .6;
+  content: '';
+  z-index: -1;
+}
+
+/* line 193 SteamQuest/HTML/scss/theme-default.scss */
+.bradcam_overlay {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 197 SteamQuest/HTML/scss/theme-default.scss */
+.bradcam_overlay::before {
+  position: absolute;
+  content: "";
+  background: -moz-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
+  /* IE6-9 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* line 213 SteamQuest/HTML/scss/theme-default.scss */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* line 217 SteamQuest/HTML/scss/theme-default.scss */
+.pt-120 {
+  padding-top: 120px;
+}
+
+/* button style */
+/* line 223 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div {
+  background: transparent;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  color: #FFFFFF;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  left: 50px;
+  font-size: 15px;
+  line-height: 40px;
+  border: 1px solid #8E8B8B;
+  left: 150px;
+}
+
+/* line 250 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-next {
+  left: auto;
+  right: 150px;
+}
+
+/* line 255 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-next i {
+  position: relative;
+  right: 0;
+}
+
+/* line 262 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-prev i {
+  position: relative;
+  top: 0px;
+}
+
+/* line 272 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel:hover .owl-nav div {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 275 SteamQuest/HTML/scss/theme-default.scss */
+.owl-carousel:hover .owl-nav div:hover {
+  color: #fff;
+  background: #27b5c2;
+  border: 1px solid transparent;
+}
+
+/* line 285 SteamQuest/HTML/scss/theme-default.scss */
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+/* line 289 SteamQuest/HTML/scss/theme-default.scss */
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+/* line 292 SteamQuest/HTML/scss/theme-default.scss */
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* line 295 SteamQuest/HTML/scss/theme-default.scss */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 1 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn {
+  background: #fff;
+  color: #131313;
+  display: inline-block;
+  padding: 14px 44px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #27b5c2;
+  text-align: center;
+  color: #27b5c2 !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 16 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn:hover {
+  background: #27b5c2;
+  color: #fff !important;
+  border: 1px solid #27b5c2;
+}
+
+/* line 21 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn:focus {
+  outline: none;
+}
+
+/* line 24 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn.large-width {
+  width: 220px;
+}
+
+/* line 28 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3 {
+  background: #27b5c2;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 33px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid transparent;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* line 45 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3:hover {
+  border: 1px solid #27b5c2;
+  color: #27b5c2 !important;
+  background: transparent;
+}
+
+/* line 50 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3:focus {
+  outline: none;
+}
+
+/* line 53 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3.large-width {
+  width: 220px;
+}
+
+/* line 57 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn4 {
+  background: #27b5c2;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 27px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* line 76 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn4:hover {
+  background: #27b5c2;
+  color: #fff !important;
+}
+
+/* line 81 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn4:focus {
+  outline: none;
+}
+
+/* line 84 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn4.large-width {
+  width: 220px;
+}
+
+/* line 89 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-white {
+  color: #fff;
+  display: inline-block;
+  padding: 13px 27px;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* line 106 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-white:hover {
+  background: #28AE61;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+/* line 111 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-white i {
+  margin-right: 2px;
+}
+
+/* line 114 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-white:focus {
+  outline: none;
+}
+
+/* line 117 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-white.large-width {
+  width: 220px;
+}
+
+/* line 122 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-green-2 {
+  color: #27b5c2 !important;
+  display: inline-block;
+  padding: 14px 31px;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #27b5c2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* line 138 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-green-2:hover {
+  background: #27b5c2;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+/* line 143 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-green-2:focus {
+  outline: none;
+}
+
+/* line 146 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn3-green-2.large-width {
+  width: 220px;
+}
+
+/* line 150 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn2 {
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 24px;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 162 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn2:hover {
+  background: #fff;
+  color: #131313 !important;
+}
+
+/* line 166 SteamQuest/HTML/scss/_btn.scss */
+.boxed-btn2:focus {
+  outline: none;
+}
+
+/* line 170 SteamQuest/HTML/scss/_btn.scss */
+.line-button {
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+/* line 178 SteamQuest/HTML/scss/_btn.scss */
+.line-button::before {
+  position: absolute;
+  content: "";
+  background: #919191;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 187 SteamQuest/HTML/scss/_btn.scss */
+.line-button:hover {
+  color: #009DFF;
+}
+
+/* line 190 SteamQuest/HTML/scss/_btn.scss */
+.line-button:hover::before {
+  background: #009DFF;
+}
+
+/* line 194 SteamQuest/HTML/scss/_btn.scss */
+.line_btn {
+  display: inline-block;
+  font-size: 15px;
+  color: #27b5c2;
+  border: 1px solid #27b5c2;
+  text-transform: capitalize;
+  padding: 13px 34px;
+  font-weight: 600;
+}
+
+/* line 202 SteamQuest/HTML/scss/_btn.scss */
+.line_btn:hover {
+  background: #27b5c2;
+  color: #fff;
+}
+
+/* line 3 SteamQuest/HTML/scss/_section_title.scss */
+.section_title span {
+  position: relative;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 500;
+  color: #27b5c2;
+  text-transform: capitalize;
+  margin-bottom: 19px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 14 SteamQuest/HTML/scss/_section_title.scss */
+.section_title h3 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #1F1F1F;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 14 SteamQuest/HTML/scss/_section_title.scss */
+  .section_title h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 14 SteamQuest/HTML/scss/_section_title.scss */
+  .section_title h3 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 31 SteamQuest/HTML/scss/_section_title.scss */
+  .section_title h3 br {
+    display: none;
+  }
+}
+
+/* line 37 SteamQuest/HTML/scss/_section_title.scss */
+.section_title p {
+  font-size: 16px;
+  color: #727272;
+  line-height: 28px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  /* line 43 SteamQuest/HTML/scss/_section_title.scss */
+  .section_title p br {
+    display: none;
+  }
+}
+
+/* line 51 SteamQuest/HTML/scss/_section_title.scss */
+.section_title.white_text h3 {
+  color: #fff;
+}
+
+/* line 54 SteamQuest/HTML/scss/_section_title.scss */
+.section_title.white_text span {
+  color: #fff;
+  padding-top: 0;
+}
+
+/* line 57 SteamQuest/HTML/scss/_section_title.scss */
+.section_title.white_text span:before {
+  display: none;
+}
+
+/* line 63 SteamQuest/HTML/scss/_section_title.scss */
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 63 SteamQuest/HTML/scss/_section_title.scss */
+  .mb-50 {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 69 SteamQuest/HTML/scss/_section_title.scss */
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+@media (max-width: 767px) {
+  /* line 69 SteamQuest/HTML/scss/_section_title.scss */
+  .mb-90 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 4 SteamQuest/HTML/scss/_slick-nav.scss */
+  .mobile_menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+  }
+}
+
+/* line 13 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav {
+  background: #fff;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  width: 95%;
+  padding: 0;
+  border-radius: 0px;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 11px;
+}
+
+/* line 28 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav a:hover {
+  background: transparent;
+  color: #5DB2FF;
+}
+
+/* line 32 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav a.active {
+  color: #5DB2FF;
+}
+
+@media (max-width: 767px) {
+  /* line 35 SteamQuest/HTML/scss/_slick-nav.scss */
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 35 SteamQuest/HTML/scss/_slick-nav.scss */
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+/* line 44 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav .slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 99;
+  border: 1px solid #ddd;
+  top: 3px;
+  right: 5px;
+  top: -36px;
+}
+
+/* line 55 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
+  margin-right: 6px;
+  margin-top: 3px;
+  position: relative;
+  padding-bottom: 3px;
+  top: -11px;
+  right: -5px;
+}
+
+@media (max-width: 767px) {
+  /* line 12 SteamQuest/HTML/scss/_slick-nav.scss */
+  .slicknav_menu {
+    margin-right: 0px;
+  }
+}
+
+/* line 72 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_nav .slicknav_arrow {
+  float: right;
+  font-size: 22px;
+  position: relative;
+  top: -9px;
+}
+
+/* line 78 SteamQuest/HTML/scss/_slick-nav.scss */
+.slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+  padding: 5px;
+  right: 0;
+  margin-top: -5px;
+  top: -29px;
+  right: 5px;
+}
+
+/* line 1 SteamQuest/HTML/scss/_header.scss */
+.header-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  /* line 1 SteamQuest/HTML/scss/_header.scss */
+  .header-area {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1 SteamQuest/HTML/scss/_header.scss */
+  .header-area {
+    padding-top: 0;
+  }
+}
+
+/* line 14 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area {
+  padding: 0 200px;
+}
+
+@media (max-width: 767px) {
+  /* line 14 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area {
+    padding: 10px 10px;
+    background: black;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 14 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area {
+    padding: 10px 10px;
+    background: black;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 14 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 14 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area {
+    padding: 0 70px;
+  }
+}
+
+/* line 30 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .logo-img {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  /* line 30 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 30 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 30 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+/* line 44 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu {
+  text-align: center;
+}
+
+/* line 47 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 23px;
+}
+
+/* line 57 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  padding: 40px 0;
+  font-family: "Muli", sans-serif;
+  position: relative;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 57 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 57 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+/* line 75 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a i {
+  font-size: 9px;
+}
+
+@media (max-width: 767px) {
+  /* line 75 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a i {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 75 SteamQuest/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a i {
+    display: none !important;
+  }
+}
+
+/* line 85 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a.active::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* line 90 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a:hover {
+  color: #27b5c2;
+}
+
+/* line 94 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu {
+  position: absolute;
+  left: 0;
+  top: 140%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 106 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li {
+  display: block;
+  margin: 0;
+}
+
+/* line 109 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  color: #000;
+}
+
+/* line 115 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li a::before {
+  display: none;
+}
+
+/* line 119 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li:hover a {
+  color: #27b5c2;
+}
+
+/* line 124 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* line 129 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover > a::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* line 133 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:first-child a {
+  padding-left: 0;
+}
+
+/* line 139 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: -75px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateY(70px);
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  background: black;
+}
+
+/* line 165 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .main-menu {
+  padding: 0;
+}
+
+/* line 169 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .main-menu ul li a {
+  color: #fff;
+}
+
+/* line 176 SteamQuest/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .log_chat_area .say_hi {
+  color: #fff;
+}
+
+/* line 184 SteamQuest/HTML/scss/_header.scss */
+.header-area .log_chat_area {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+}
+
+/* line 186 SteamQuest/HTML/scss/_header.scss */
+.header-area .log_chat_area .say_hi {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  z-index: 0;
+  padding: 0 0 12px 0;
+  margin-right: 0px;
+  font-family: "Muli", sans-serif;
+}
+
+/* line 195 SteamQuest/HTML/scss/_header.scss */
+.header-area .log_chat_area .say_hi:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #27b5c2;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 1 SteamQuest/HTML/scss/_slider.scss */
+.slider_bg_1 {
+  background-image: url(../images/banners/slider_banner_1.jpg);
+}
+
+/* line 4 SteamQuest/HTML/scss/_slider.scss */
+
+/* line 9 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider {
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 767px) {
+  /* line 9 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 9 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: 620px;
+  }
+}
+
+/* line 23 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider.about_banner.overlay::before {
+  opacity: .5;
+}
+
+/* line 27 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 84px;
+  margin-bottom: 54px;
+}
+
+/* line 34 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 span {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  /* line 27 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 27 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 27 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+/* line 53 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 59 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text span::before {
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 2px;
+  content: '';
+  left: -67px;
+  top: 50%;
+  margin-bottom: -1px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 53 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 53 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 16px;
+  }
+}
+
+/* line 76 SteamQuest/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text .video_service_btn > a {
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 76 SteamQuest/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text .video_service_btn > a {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* line 1 SteamQuest/HTML/scss/_about.scss */
+.about_area {
+  background: black;
+  position: relative;
+}
+
+/* line 4 SteamQuest/HTML/scss/_about.scss */
+.about_area::before {
+  content: '';
+  background-image: url(../images/about/about3.jpg);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 9;
+  background-size: cover;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 767px) {
+  /* line 4 SteamQuest/HTML/scss/_about.scss */
+  .about_area::before {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4 SteamQuest/HTML/scss/_about.scss */
+  .about_area::before {
+    display: none;
+  }
+}
+
+/* line 23 SteamQuest/HTML/scss/_about.scss */
+.about_area .about_thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+/* line 29 SteamQuest/HTML/scss/_about.scss */
+.about_area .about_thumb img {
+  width: 100%;
+}
+
+/* line 33 SteamQuest/HTML/scss/_about.scss */
+.about_area .about_info {
+  padding: 160px 0;
+}
+
+@media (max-width: 767px) {
+  /* line 33 SteamQuest/HTML/scss/_about.scss */
+  .about_area .about_info {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 33 SteamQuest/HTML/scss/_about.scss */
+  .about_area .about_info {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 33 SteamQuest/HTML/scss/_about.scss */
+  .about_area .about_info {
+    padding: 100px 0;
+  }
+}
+
+/* line 46 SteamQuest/HTML/scss/_about.scss */
+.about_area .section_title h3 {
+  margin-top: 25px;
+  margin-bottom: 54px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 46 SteamQuest/HTML/scss/_about.scss */
+  .about_area .section_title h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 46 SteamQuest/HTML/scss/_about.scss */
+  .about_area .section_title h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 58 SteamQuest/HTML/scss/_about.scss */
+.about_area .section_title .mid_text {
+  color: #C9C9C9;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+/* line 64 SteamQuest/HTML/scss/_about.scss */
+.about_area .section_title .last_text {
+  color:#27b5c2;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 44px;
+}
+
+
+/* line 112 SteamQuest/HTML/scss/_gallery.scss */
+.mt-50 {
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 112 SteamQuest/HTML/scss/_gallery.scss */
+  .mt-50 {
+    margin-top: 30px;
+  }
+}
+
+/* line 118 SteamQuest/HTML/scss/_gallery.scss */
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 118 SteamQuest/HTML/scss/_gallery.scss */
+  .mb-50 {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 1 SteamQuest/HTML/scss/_footer.scss */
+.footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 6 SteamQuest/HTML/scss/_footer.scss */
+.footer .footer_top {
+  /* padding-top: 100px;
+  padding-bottom: 160px; */
+  background: #000000;
+}
+
+@media (max-width: 767px) {
+  /* line 6 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top {
+    /* padding-top: 50px;
+    padding-bottom: 30px; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 6 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top {
+    /* padding-top: 50px;
+    padding-bottom: 60px; */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 6 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top {
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 22 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top .menu_links {
+    margin-top: 15px;
+  }
+}
+
+/* line 27 SteamQuest/HTML/scss/_footer.scss */
+.footer .footer_top .menu_links ul li {
+  display: inline-block;
+  margin-right: 46px;
+}
+
+@media (max-width: 767px) {
+  /* line 27 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top .menu_links ul li {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 27 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top .menu_links ul li {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 27 SteamQuest/HTML/scss/_footer.scss */
+  .footer .footer_top .menu_links ul li {
+    margin-right: 30px;
+  }
+}
+
+/* line 39 SteamQuest/HTML/scss/_footer.scss */
+.footer .footer_top .menu_links ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* line 43 SteamQuest/HTML/scss/_footer.scss */
+.footer .footer_top .menu_links ul li a:hover {
+  color: #27b5c2;
+}
+
+/* line 51 SteamQuest/HTML/scss/_footer.scss */
+.footer .copy-right_text {
+  padding-bottom: 25px;
+  background: #000000;
+}
+
+/* line 54 SteamQuest/HTML/scss/_footer.scss */
+.footer .copy-right_text .footer_border {
+  padding-bottom: 25px;
+  border-top: 1px solid #363636;
+}
+
+/* line 58 SteamQuest/HTML/scss/_footer.scss */
+.footer .copy-right_text .copy_right {
+  font-size: 15px;
+  color: #C9C9C9;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  /* line 58 SteamQuest/HTML/scss/_footer.scss */
+  .footer .copy-right_text .copy_right {
+    font-size: 13px;
+  }
+}
+
+/* line 66 SteamQuest/HTML/scss/_footer.scss */
+.footer .copy-right_text .copy_right a {
+  color: #27b5c2;
+}
+
+/* line 71 SteamQuest/HTML/scss/_footer.scss */
+.footer .socail_links {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  /* line 71 SteamQuest/HTML/scss/_footer.scss */
+  .footer .socail_links {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 71 SteamQuest/HTML/scss/_footer.scss */
+  .footer .socail_links {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* line 85 SteamQuest/HTML/scss/_footer.scss */
+.footer .socail_links ul li {
+  display: inline-block;
+}
+
+/* line 88 SteamQuest/HTML/scss/_footer.scss */
+.footer .socail_links ul li a {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 40px !important;
+  margin-right: 7px;
+  color: #E7F9F9;
+  line-height: 40px !important;
+  border: 1px solid #E7F9F9;
+  font-size: 14px;
+}
+
+/* line 102 SteamQuest/HTML/scss/_footer.scss */
+.footer .socail_links ul li a:hover {
+  color: #fff !important;
+  background: #27b5c2;
+  border: 1px solid #27b5c2;
+}
+
+
+/* line 203 SteamQuest/HTML/scss/_bradcam.scss */
+.mfp-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #000000;
+  opacity: .7;
+}
+
+/* line 2 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area {
+  padding: 160px 0;
+  background-image: url(../images/testmonial/banner.jpg);
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 9 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  content: '';
+  background: #131212;
+  opacity: .2;
+}
+
+@media (max-width: 767px) {
+  /* line 2 SteamQuest/HTML/scss/_tesmonial.scss */
+  .testimonial_area {
+    padding: 50px 0;
+  }
+}
+
+/* line 24 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .single_testmonial p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 35px 0 25px 0;
+}
+
+@media (min-width: 320px) and (max-width: 1500px) {
+  /* line 30 SteamQuest/HTML/scss/_tesmonial.scss */
+  .testimonial_area .single_testmonial p br {
+    display: none;
+  }
+}
+
+/* line 38 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .single_testmonial .testmonial_author .thumb {
+  width: 42px;
+  height: 42px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  margin: auto auto 12px auto;
+}
+
+/* line 45 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .single_testmonial .testmonial_author h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
+/* line 53 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .single_testmonial .testmonial_author span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 61 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
+}
+
+/* line 65 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .owl-carousel .owl-nav div.owl-next {
+  left: auto;
+  right: 0;
+}
+
+/* line 69 SteamQuest/HTML/scss/_tesmonial.scss */
+.testimonial_area .owl-carousel .owl-nav div {
+  left: 0;
+}
+
+
+/* line 1 SteamQuest/HTML/scss/_service.scss */
+.service_area {
+  padding-top: 155px;
+  padding-bottom: 130px;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  /* line 1 SteamQuest/HTML/scss/_service.scss */
+  .service_area {
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1 SteamQuest/HTML/scss/_service.scss */
+  .service_area {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 11 SteamQuest/HTML/scss/_service.scss */
+.service_area .single_service {
+  padding: 48px 35px 45px 35px;
+  border: 2px solid #E8E8E8;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 11 SteamQuest/HTML/scss/_service.scss */
+  .service_area .single_service {
+    padding: 30px 20px;
+  }
+}
+
+/* line 23 SteamQuest/HTML/scss/_service.scss */
+.service_area .single_service h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 29px;
+  margin-bottom: 13px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 23 SteamQuest/HTML/scss/_service.scss */
+  .service_area .single_service h3 {
+    font-size: 22px;
+  }
+}
+
+/* line 33 SteamQuest/HTML/scss/_service.scss */
+.service_area .single_service p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+/* line 40 SteamQuest/HTML/scss/_service.scss */
+.service_area .single_service:hover {
+  border: 2px solid #27b5c2;
+}
+
+/* line 2 SteamQuest/HTML/scss/_team.scss */
+.team_area {
+  padding-top: 155px;
+  padding-bottom: 122px;
+}
+
+@media (max-width: 767px) {
+  /* line 2 SteamQuest/HTML/scss/_team.scss */
+  .team_area {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:black;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 2 SteamQuest/HTML/scss/_team.scss */
+  .team_area {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+
+/* line 13 SteamQuest/HTML/scss/_team.scss */
+.team_area.overlay2::before {
+  opacity: 0.85;
+}
+
+/* line 16 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team {
+  margin-bottom: 30px;
+}
+
+/* line 18 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 22 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb img {
+  width: 100%;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 26 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb .team_hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-transform: translateY(10%);
+  -moz-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+/* line 36 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb .team_hover .hover_inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 20px;
+}
+
+/* line 43 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb .team_hover .hover_inner ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+/* line 46 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb .team_hover .hover_inner ul li a {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 37px !important;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #27b5c2;
+  display: inline-block;
+  background: #27b5c2;
+}
+
+/* line 57 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_thumb .team_hover .hover_inner ul li a:hover {
+  background: #27b5c2;
+  border: 1px solid #27b5c2;
+  color: #fff;
+}
+
+/* line 68 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_title {
+  padding-top: 28px;
+}
+
+/* line 70 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_title h3 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+/* line 77 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team .team_title p {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #b9b7b7;
+  font-family: "Muli", sans-serif;
+}
+
+/* line 86 SteamQuest/HTML/scss/_team.scss */
+.team_area .single_team:hover .team_hover {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* line 1 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area {
+  padding-top: 146px;
+  padding-bottom: 160px;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  /* line 1 SteamQuest/HTML/scss/_getIn_tauch.scss */
+  .get_in_tauch_area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+/* line 10 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area .touch_form .single_input input, .get_in_tauch_area .touch_form .single_input textarea {
+  width: 100%;
+  border: 1px solid #C9C9C9;
+  height: 50px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border-width: 1.5px;
+  padding: 20px 16px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+  font-weight: 400;
+  background-color: black;
+}
+
+/* line 21 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area .touch_form .single_input input::placeholder, .get_in_tauch_area .touch_form .single_input textarea::placeholder {
+  color: #707070;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* line 27 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area .touch_form .single_input input:focus, .get_in_tauch_area .touch_form .single_input textarea:focus {
+  outline: none;
+}
+
+/* line 31 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area .touch_form .single_input textarea {
+  height: 148px;
+  resize: none;
+}
+
+/* line 37 SteamQuest/HTML/scss/_getIn_tauch.scss */
+.get_in_tauch_area .touch_form .submit_btn .boxed-btn3 {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area {
+  position: relative;
+  background-color: black;
+}
+
+/* line 3 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area.extra_margin_bottom {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 767px) {
+  /* line 3 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin_bottom {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 3 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin_bottom {
+    margin-bottom: 100px;
+  }
+}
+
+/* line 12 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area.extra_margin {
+  margin-top: 160px;
+}
+
+@media (max-width: 767px) {
+  /* line 12 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 12 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area.extra_margin {
+    margin-top: 100px;
+  }
+}
+
+/* line 21 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-image: url(../images/tutorial/video-tutorial-image.png);
+  background-size: cover;
+  background-position: center center;
+  /* -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px; */
+}
+
+@media (max-width: 767px) {
+  /* line 21 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area::before {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 21 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area::before {
+    display: none;
+  }
+}
+
+/* line 39 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info {
+  padding: 180px 0;
+}
+
+@media (max-width: 767px) {
+  /* line 39 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area .work_info {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 39 SteamQuest/HTML/scss/_work.scss */
+  .how_we_work_area .work_info {
+    padding: 100px 0;
+  }
+}
+
+/* line 48 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info .section_title .mid_text {
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  color: #f7f0f0;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/* line 55 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info .section_title .last_p {
+  font-size: 16px;
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+/* line 61 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info .video_watch {
+  margin-top: 37px;
+}
+
+/* line 64 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info .video_watch .play_btn a {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #27b5c2;
+  font-size: 14px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  display: inline-block;
+}
+
+/* line 76 SteamQuest/HTML/scss/_work.scss */
+.how_we_work_area .work_info .video_watch span {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+/*=================== contact banner start ====================*/
+
+.text-heading {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* line 85 SteamQuest/HTML/scss/_elements.scss */
+b,
+sup,
+sub,
+u,
+del {
+  color: #ff5e13;
+}
+
+/* line 93 SteamQuest/HTML/scss/_elements.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 97 SteamQuest/HTML/scss/_elements.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 101 SteamQuest/HTML/scss/_elements.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 105 SteamQuest/HTML/scss/_elements.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 109 SteamQuest/HTML/scss/_elements.scss */
+h5 {
+  font-size: 16px;
+}
+
+/* line 113 SteamQuest/HTML/scss/_elements.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 117 SteamQuest/HTML/scss/_elements.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+}
+
+/* line 127 SteamQuest/HTML/scss/_elements.scss */
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  color: #828bb2;
+}
+
+/* Steam Button */
+
+.steambutton {
+  display: block;
+  background-color: #27b5c2;
+  width: 270px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.steambutton span {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  width: 75%;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.steambutton span,
+.steambutton .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.steambutton .icon .fa {
+  font-size: 30px;
+  line-height: 50px;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+
+.steambutton .icon {
+  width: 25%;
+  right: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.steambutton span,
+.steambutton .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.steambutton span:after {
+  content: '';
+  background-color: rgb(17, 120, 138);
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+
+.steambutton.success span,
+.steambutton:hover span {
+  left: -72%;
+  opacity: 0;
+}
+
+.steambutton.success .icon,
+.steambutton:hover .icon {
+  width: 100%;
+}
+
+.steambutton.success .icon .fa,
+.steambutton:hover .icon .fa {
+  font-size: 45px;
+}

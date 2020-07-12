@@ -1,0 +1,360 @@
+doctype html
+// <html class="no-js" lang="zxx">
+// author: Robin Thomas (TheRealHazzard), Vishal (Nightmare99) , Date:18th June 2020 (Year I of Lockdown)
+html
+  head
+    include libraries
+  body(style='background-color:black')
+    // header-start
+    header
+      .header-area
+        #sticky-header.main-header-area
+          .container-fluid.p-0
+            .row.align-items-center.no-gutters
+              .col-xl-2.col-lg-2
+                .logo-img
+                  a(href='/')
+                    img(src='images/logo.png', alt='', width='150', height='30')
+              .col-xl-8.col-lg-8
+                .main-menu.d-none.d-lg-block.text-center
+                  nav
+                    ul#navigation
+                      li
+                        a.active(href='/') home
+                      li
+                        a(href='#servicestag') services
+                      li
+                        a(href='#tutorial') Video Tutorial
+                      li
+                        a(href='#team') The Team
+                      li
+                        a(href='#contactus') Contact
+                      if username
+                        li
+                          a(href='/logout') Logout
+                      else
+                        li
+                          a(href='/authenticate') Login 
+              .col-lg-2.d-none.d-lg-block
+                .log_chat_area.d-flex.align-items-end
+            .col-12
+              .mobile_menu.d-block.d-lg-none
+    // header-end
+    // slider_area_start
+    .slider_area
+      .single_slider.d-flex.align-items-center.slider_bg_1.overlay
+        .container
+          .row.align-items-center.justify-content-start
+            .col-lg-10.col-md-10
+              .slider_text
+                h3.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.1s')
+                  if !username
+                    | "Use Steam Quest
+                    |  to predict the value of
+                    |  a Steam 
+                    |  item in the future"
+                  else
+                    | Hello #{ username }  
+                if username
+                    a.steambutton.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.1s',href='/search')
+                     span Search
+                     .icon
+                        i.fa.fa-search
+                    
+                else
+                    a.steambutton.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.1s',href='/authenticate')
+                     span Login With Steam
+                     .icon
+                        i.fa.fa-steam-square
+    // slider_area_end
+    // service_area
+    #servicestag.service_area(style='padding-bottom:30px;padding-top:50px')
+      .container
+        .row.justify-content-center
+          .col-lg-6
+            .section_title.text-center.mb-70
+              span.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.1s' style="color:#27b5c2;") Games Offered
+              h3.wow.fadeInUp(data-wow-duration='1.2s', data-wow-delay='.2s' style="color:white;")
+                | We currenly offer
+                | predictions
+                | for items from PUBG. 
+                | CS:GO and DOTA 2 coming soon.
+              if !username
+                h3.wow.fadeInUp(data-wow-duration='1.2s', data-wow-delay='.2s' style="color:#27b5c2;font-size:1.3rem;font-weight: 900;")
+                  | Login through Steam now to check out for yourself.
+        .row
+          .col-xl-4.col-lg-4.col-md-4
+            .single_service.text-center.wow.fadeInLeft(data-wow-duration='1.2s', data-wow-delay='.4s')
+              .icon
+                img(src='images/services/pubg_alt.png', alt='', width='100', height='100')
+              h3 PUBG
+              p Search for your item and estimate it's future value using our simple tool.
+          .col-xl-4.col-md-4
+            .single_service.text-center.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s')
+              .icon
+                img(src='images/services/csgo_alt.png', alt='', width='100', height='100')
+              h3 CS:GO
+              p(style='font-size: 30px;') Coming Soon.
+          .col-xl-4.col-md-4
+            .single_service.text-center.wow.fadeInRight(data-wow-duration='1.2s', data-wow-delay='.4s')
+              .icon
+                img(src='images/services/dota_alt.png', alt='', width='100', height='100')
+              h3 Dota 2
+              p(style='font-size: 30px;') Coming Soon.
+    
+    .large-header.jumbotron.jumbotron-fluid.wow.fadeInLeft(data-wow-duration='1s' data-wow-delay='.1s' style='background-color:#cccbc8;text-align:center;margin-bottom:3px;background-image: url("https://images.hdqwalls.com/wallpapers/pubg-4k-2020-uv.jpg");')
+      .container
+        img.rounded-circle(src='../images/games/PUBGlogo.png' height='100' width='100' )
+      br
+      br
+    .large-header.jumbotron.jumbotron-fluid.wow.fadeInLeft(data-wow-duration='1s' data-wow-delay='.1s' style='background-color:#cccbc8;text-align:center;margin-bottom:3px;background-image: url("https://images5.alphacoders.com/715/thumb-1920-715035.png");')
+      .container
+        img.rounded-circle(src='../images/games/CSGO_100logo.png' height='100' width='100')
+      br
+      br
+
+    .large-header.jumbotron.jumbotron-fluid.wow.fadeInLeft(data-wow-duration='1s' data-wow-delay='.1s' style='background-color:#cccbc8;text-align:center;margin-bottom:70px;background-image: url("https://images5.alphacoders.com/433/433882.jpg");')
+      .container
+        img(src='../images/games/DotA2_100logo.png' height='100' width='100')
+      br
+      br
+    // / service_area
+    #about.about_area
+      .container
+        .row.justify-content-end
+          .col-lg-5.offset-lg-1
+            .about_info
+              .section_title.white_text
+                span.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s' style="text-decoration: underline;") About Us
+                h3.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.4s')
+                  | B.Tech Students From VIT
+                p.mid_text.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
+                  | Great things in
+                  | business are never done by one person. They’re done by a team of people.
+                p.last_text.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.6s')
+                  | We're Team QuEST (Quality Engineering & Software Technologies)
+                  | 
+                // <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">About Us</a>
+    #tutorial.how_we_work_area
+      .container
+        .row
+          .col-lg-5
+            .work_info
+              .section_title
+                h3.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.3s' style='color:white; text-decoration: underline;') How we work
+                p.mid_text.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.4s')
+                  | Watch The Video To Learn More
+                  
+                p.last_p.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.5s')
+                  | "Create an
+                  | efficent machine learning model in order to ensure minum deviation."
+              .video_watch.d-flex.align-items-center
+                .play_btn.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.6s')
+                  a.video_icon.popup-video(href='https://www.youtube.com/watch?v=Izfsxg3U_VA')
+                    i.fa.fa-play
+                span.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.7s')
+                  | Watch Demo
+                  | Video
+    // team_member_start
+    #team.team_area
+      .container
+        .row.justify-content-center
+          .col-lg-6
+            .section_title.text-center.mb-90
+              h3.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s' style='color:white;') Our Team
+              p.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.6s' style='color: #b9b7b7;' )
+                | Final Year Students From
+                | VIT Chennai
+        .row
+          .col-lg-3.col-md-6
+            .single_team.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.2s')
+              .team_thumb
+                img(src='images/team/1.jpeg', alt='')
+                .team_hover
+                  .hover_inner.text-center
+                    ul
+                      li
+                        a(href='https://www.instagram.com/chickentikkaa/')
+                          i.fa.fa-instagram
+                      li
+                        a(href='https://www.linkedin.com/in/vishal-kumar-91236a154/')
+                          i.fa.fa-linkedin
+                      li
+                        a(href='https://github.com/Nightmare99')
+                          i.fa.fa-github
+              .team_title.text-center
+                h3 Vishal Kumar
+                p Back-End Developer
+          .col-lg-3.col-md-6
+            .single_team.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.4s')
+              .team_thumb
+                img(src='images/team/2.jpeg', alt='')
+                .team_hover
+                  .hover_inner.text-center
+                    ul
+                      li
+                        a(href='https://www.instagram.com/robin_tom_official/')
+                          i.fa.fa-instagram
+                      li
+                        a(href='https://www.linkedin.com/in/robin-thomas-3a6555183/')
+                          i.fa.fa-linkedin
+                      li
+                        a(href='https://github.com/TheRealHazzard')
+                          i.fa.fa-github
+              .team_title.text-center
+                h3 J.Robin Thomas
+                p Front-End Developer
+          .col-lg-3.col-md-6
+            .single_team.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.6s')
+              .team_thumb
+                img(src='images/team/3.jpg', alt='')
+                .team_hover
+                  .hover_inner.text-center
+                    ul
+                      li
+                        a(href='https://www.instagram.com/ashar_2706/')
+                          i.fa.fa-instagram
+                      li
+                        a(href='https://www.linkedin.com/in/ashwin-kumar-294308148/')
+                          i.fa.fa-linkedin
+                      li
+                        a(href='https://github.com/ashwin2706')
+                          i.fa.fa-github
+              .team_title.text-center
+                h3 Ashwin Kumar S
+                p Data Analysis
+          .col-lg-3.col-md-6
+            .single_team.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.8s')
+              .team_thumb
+                img(src='images/team/4.jpeg', alt='')
+                .team_hover
+                  .hover_inner.text-center
+                    ul
+                      li
+                        a(href='https://www.instagram.com/_shyam_25_/')
+                          i.fa.fa-instagram
+                      li
+                        a(href='https://www.linkedin.com/in/shyam-mylai-92bb5117b/')
+                          i.fa.fa-linkedin
+                      li
+                        a(href='https://github.com/shyam2520')
+                          i.fa.fa-github
+              .team_title.text-center
+                h3 Shyam Sundar Mylai
+                p Data Analysis
+    // / team_member_end
+    // testimonial_area
+    #testimonials.testimonial_area
+      .container
+        .row
+          .col-xl-12.col-lg-12
+            .testmonial_active.owl-carousel
+              .single_carousel
+                .single_testmonial.text-center
+                  p "Everything is hard before it is easy."
+                  .testmonial_author
+                    .thumb
+                      img.img-thumbnail.rounded-circle(src='images/team/1.jpeg', alt='Vishal')
+                    h3 Vishal "Maniaq" Kumar
+                    span Gym Freak
+              .single_carousel
+                .single_testmonial.text-center
+                     
+                  p
+                    | "Sometimes you gotta lose what you thought 
+                    br
+                    |                                     you needed to get what you actually deserved"
+                    //- br
+                    //- |                                     Other people are born with stars at their feet,
+                    //- br
+                    //- |                                      but their souls are lost at sea"
+                  .testmonial_author
+                    .thumb
+                      img.img-thumbnail.rounded-circle(src='images/team/2.jpeg', alt='Robin')
+                    h3 Robin "TheRealHazzard" Thomas
+                    span Guy Next Door
+              .single_carousel
+                .single_testmonial.text-center
+                  p “Life is short , so obliterate”
+                  .testmonial_author
+                    .thumb
+                      img.img-thumbnail.rounded-circle(src='images/team/4.jpeg', alt='Shyam')
+                    h3 Shyam "Rapgod" Sundar
+                    span Rapper
+              .single_carousel
+                .single_testmonial.text-center
+                  p I don’t need to get a life, I am a gamer, I have lots of lives.
+                  .testmonial_author
+                    .thumb
+                      img.img-thumbnail.rounded-circle(src='images/team/3.jpg', alt='Ashar')
+                    h3 Ashwin "Ashar" Kumar
+                    span Pro-Gamer
+    // /testimonial_area
+    #contactus.get_in_tauch_area(data-scroll-index='0')
+      .container
+        .row.justify-content-center
+          .col-lg-6
+            .section_title.text-center.mb-90
+              h3.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s' style='color:white;') Get in Touch
+              p.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.4s' )
+                | Kindly give us 2-3 business
+                | days to reply.
+        .row.justify-content-center
+          .col-lg-8
+            .touch_form
+              form(action='/', method='POST', id="form")
+                .row
+                  .col-md-6
+                    .single_input.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s')
+                      input(type='text', placeholder='Your Name', name='name' required)
+                  .col-md-6
+                    .single_input.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.4s')
+                      input(type='email', placeholder='Email', name='email' required)
+                  .col-md-12
+                    .single_input.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
+                      input(type='text', placeholder='Subject', name='subject' required)
+                  .col-md-12
+                    .single_input.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.6s')
+                      textarea(name='msg', cols='30', placeholder='Message', rows='10' required)
+                  .col-lg-12
+                    .submit_btn.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.7s')
+                      button.boxed-btn3(type='submit') Send Message
+    // footer start
+    footer.footer
+      .footer_top
+        .container
+          .row.align-items-center
+            .col-lg-2.col-md-3
+              .footer_logo.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.3s')
+                a(href='index.html')
+                  img(src='img/logo.png', alt='')
+            .col-xl-12.col-lg-12.col-md-9.col-sm-4(style='text-align: center;')
+              .menu_links
+                ul
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s', href='#about') About
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.4s', href='#servicestag') Services
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.5s', href='#contactus') Contact Us
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.6s', href='/faq') FAQS
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.7s', href='/tc') Terms And Conditions
+            // This section is for if we get popular and create Social Media pages for the website
+      br
+      .copy-right_text
+        .container
+          .footer_border
+          .row
+            .col-xl-12
+              p.copy_right.text-center.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='1.3s')
+                | Copyright ©
+                script.
+                  document.write(new Date().getFullYear());
+                |  All rights reserved
+    // / footer end
+    // JS here
+    include scripts
+
+

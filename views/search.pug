@@ -1,0 +1,179 @@
+//- - var img = #{ profile } Not working pls fix
+- var img = profile;
+html
+  head
+    include libraries
+    link(rel='stylesheet', href='css/search.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous')
+    script(src="js/search.js")
+  body(style='background-color:black')
+    header
+      .header-area(style='background-color: black;')
+        .main-header-area
+          .container-fluid.p-0
+            .row.align-items-center.no-gutters
+              .col-xl-2.col-lg-2
+                .logo-img
+                  a(href='/')
+                    img(src='images/logo.png', alt='', width='150', height='30')
+              .col-xl-8.col-lg-8
+                .main-menu.d-none.d-lg-block.text-center
+                  nav
+                    ul#navigation
+                      li
+                        a.active(href='/') home
+                      li
+                        a(href='/#servicestag') services
+                      li
+                        a(href='/#tutorial') Video Tutorial
+                      li
+                        a(href='/#team') The Team
+                      li
+                        a(href='/#contactus') Contact
+                      if username
+                        li
+                          a(href='/logout') Logout
+              .col-lg-2.d-none.d-lg-block
+                .log_chat_area.d-flex.align-items-end
+            .col-12
+              .mobile_menu.d-block.d-lg-none
+    br
+    br
+    br  
+    .jumbotron.jumbotron-fluid.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.1s',style='background-color:#121212;text-align:center;')
+      .container
+        h1.display-4
+            span(style='color:white') Hello #{ username }
+        img.rounded-circle(src=img height='100' width='100')
+        br
+        br
+        p.lead(style='font-weight:bold;')
+          | Use the Search Bars to Predict the value of your item.
+    
+    //- span
+    //-     br
+    //-     br
+    //-     br
+    //-     br
+    //-     br
+    //-     br
+    //-     br
+
+
+    .service_area(style='background-color:black;text-align:center;')
+      .container
+
+        .row
+          .col-xl-4.col-lg-4.col-md-4(style='z-index:30;')
+            .single_service.text-center.wow.fadeInLeft(data-wow-duration='1.2s', data-wow-delay='.4s')
+              .icon
+                img(src='images/services/pubg_alt.png', alt='', width='100', height='100')
+              h3(style='color:white;text-align:center;') PUBG
+              p Search for your item from over 340 items and estimate it's future value using our simple tool.
+                br
+                br
+                br
+                br
+                form(autocomplete='off' method='GET' action='/data')
+                  .autocomplete
+                    input(type="hidden" name='game' value='PUBG')
+                    input(type='search' name='name' id='search-request-pubg' placeholder='Search PUBG item')
+                    button(type='submit' style='background:transparent; border:none; color:transparent;')
+                      i.fa.fa-search
+          
+          .col-xl-4.col-md-4(style='z-index:20;')
+            .single_service.text-center.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.3s' style='z-index: 0;')
+              .icon
+                img(src='images/services/csgo_alt.png', alt='', width='100', height='100' style='z-index: 0;')
+              h3(style='color:white;text-align:center;') CS:GO
+              p Search for your item from over 15,000 items and estimate it's future value using our simple tool.
+                br
+                br
+                br
+                br
+                form(autocomplete='off' action='/data')
+                  .autocomplete
+                    input(type="hidden" name='game' value='CSGO_100')
+                    input(type='search' name='name' id='search-request-cs' placeholder='Search CS:GO item')
+                    button(type='submit' style='background:transparent; border:none; color:transparent;')
+                      i.fa.fa-search
+          .col-xl-4.col-md-4(style='z-index:10;')
+            .single_service.text-center.wow.fadeInRight(data-wow-duration='1.2s', data-wow-delay='.4s')
+              .icon
+                img(src='images/services/dota_alt.png', alt='', width='100', height='100')
+              h3(style='color:white;text-align:center;') DOTA 2
+              p Search for your item from over 32,000 items and estimate it's future value using our simple tool.
+               br
+               br
+               br
+               br
+               form(autocomplete='off' action='/data')
+                  .autocomplete
+                    input(type="hidden" name='game' value='DotA2_100')
+                    input(type='search' name='name' id='search-request-dota' placeholder='Search Dota 2 item')
+                    button(type='submit' style='background:transparent; border:none; color:transparent;')
+                      i.fa.fa-search
+
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br 
+
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br
+        //- br  
+
+
+    footer.footer
+      .footer_top
+        .container
+          .row.align-items-center
+            .col-lg-2.col-md-3
+              .footer_logo.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.3s')
+                a(href='index.html')
+                  img(src='img/logo.png', alt='')
+            .col-xl-12.col-lg-12.col-md-9.col-sm-4(style='text-align: center;')
+              .menu_links
+                ul
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s', href='/#about') About
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.4s', href='/#servicestag') Services
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.5s', href='/#contactus') Contact Us
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.6s', href='/faq') FAQS
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.7s', href='/tc') Terms And Conditions
+            // This section is for if we get popular and create Social Media pages for the website
+      br
+      .copy-right_text
+        .container
+          .footer_border
+          .row
+            .col-xl-12
+              p.copy_right.text-center.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='1.3s')
+                | Copyright ©
+                script.
+                  document.write(new Date().getFullYear());
+                |  All rights reserved
+    script.
+      var pubgNames = `#{PUBG}`.split(',');
+      var csgoNames = `#{CSGO}`.split(',');
+      var dotaNames = `#{DotA2}`.split(',');
+      console.log(pubgNames);
+      autocomplete(document.getElementById("search-request-pubg"), pubgNames);
+      autocomplete(document.getElementById("search-request-cs"), csgoNames);
+      autocomplete(document.getElementById("search-request-dota"), dotaNames);
+
+include scripts
+
+
+

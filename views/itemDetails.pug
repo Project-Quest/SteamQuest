@@ -1,0 +1,263 @@
+html
+    head
+        title SteamQuest
+        include libraries
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js")
+        script(src="https://code.jquery.com/jquery-3.5.1.js",integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=",crossorigin="anonymous")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js' integrity='sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=' crossorigin='anonymous')
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css")
+        link(rel="stylesheet" href="css/loading.css")
+        //- link(rel="stylesheet" href="css/animatedBackground.css")
+        link(rel="stylesheet" href="css/itemDetails.css")
+        script.
+          function makeGraph(xAxis, yAxis) {
+            var xLabels = xAxis;
+            var yLabels = yAxis;
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xLabels,
+                    datasets: [{
+                        label: 'Price',
+                        fill: false,
+                        borderColor: "#27b5c2",
+                        data: yLabels,
+                        pointStyle: 'circle',
+                        radius: 0,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    tooltips: {
+                        callbacks: {
+                            title: function() {}
+                        }
+                    },
+                    maintainAspectRatio: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                display: false,
+                                beginAtZero: true
+                            },
+                            gridLines: {
+                                display: false
+                            }
+                        }]
+                    }
+                }
+            });
+          }
+
+          function makeGraph2(xAxis, yAxis) {
+
+            var xLabels = xAxis;
+            var yLabels = JSON.parse(yAxis);
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xLabels,
+                    datasets: [{
+                        label: 'Price',
+                        fill: false,
+                        borderColor: "red",
+                        data: yLabels,
+                        pointStyle: 'circle',
+                        radius: 3,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    tooltips: {
+                        callbacks: {
+                            title: function() {}
+                        }
+                    },
+                    maintainAspectRatio: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                display: true,
+                                beginAtZero: true
+                            },
+                            gridLines: {
+                                display: true
+                            }
+                        }]
+                    }
+                }
+            });
+          }
+
+          $(document).ready(function() {
+            console.log("foo");
+            var details = `<header>
+                            <div class="header-area" style="background-color: black;">
+                              <div class="main-header-area">
+                                <div class="container-fluid p-0">
+                                  <div class="row align-items-center no-gutters">
+                                    <div class="col-xl-2 col-lg-2">
+                                      <div class="logo-img"><a href="/"><img src="images/logo.png" alt="" width="150" height="30"/></a></div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8">
+                                      <div class="main-menu d-none d-lg-block text-center">
+                                        <nav>
+                                          <ul id="navigation">
+                                            <li><a class="active" href="/">home</a></li>
+                                            <li><a href="/#servicestag">services</a></li>
+                                            <li><a href="/#tutorial">Video Tutorial</a></li>
+                                            <li><a href="/#team">The Team</a></li>
+                                            <li><a href="/#contactus">Contact</a></li>
+                                          </ul>
+                                        </nav>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-2 d-none d-lg-block">
+                                      <div class="log_chat_area d-flex align-items-end"></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </header>
+                          <br/><br/><br/>
+                          
+                          <div>
+                            <div class="large-header jumbotron jumbotron-fluid wow fadeInLeft color" data-wow-duration="1s" data-wow-delay=".1s" style="background-color:#cccbc8;text-align:center;background-image: url('../images/games/#{game}bg.jpeg');">
+                            <div class="container">
+                              
+                              <img src="../images/games/#{game}logo.png" height="100" width="100" />         
+
+                            </div>
+                            <br>
+                            <br>
+                          </div>
+                          <!--
+                          <div>
+                            <div id="large-header1" class="large-header jumbotron jumbotron-fluid wow fadeInLeft color" data-wow-duration="1s" data-wow-delay=".1s" style="background-color:#cccbc8;text-align:center;background-image: url('../images/games/CSGO_100bg.png');">
+                            <div class="container">
+                              
+                              <img class="rounded-circle" src="../images/games/CSGO_100logo.png" height="100" width="100" />         
+
+                            </div>
+                            <br>
+                            <br>
+                          </div>
+                          
+                          <div>
+                            <div id="large-header2" class="large-header jumbotron jumbotron-fluid wow fadeInLeft color" data-wow-duration="1s" data-wow-delay=".1s" style="background-color:#cccbc8;text-align:center;background-image: url('../images/games/DotA2_100bg.jpeg');">
+                            <div class="container">
+                              
+                              <img class="rounded-circle" src="../images/games/DotA2_100logo.png" height="100" width="100" />         
+
+                            </div>
+                            <br>
+                            <br>
+                          </div>
+                          -->
+                          <hr/>
+                          
+                          <h1 class="shake display-4 wow fadeInUp data-wow-duration="1s" data-wow-delay=".1s" style="padding-bottom: 5px;font-weight:bold;text-align:center; color:#cccbc8;font-size:350%;">
+                          `
+            var details2 = `</h1>
+                          <br>
+                          <br>
+                          <h2 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="padding-bottom: 5px;text-align:center; color:#cccbc8;">Price History </h2>
+                          <br>
+                          <div class="container wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".4s" style="background-color:black;">
+                            <div style="position: relative; height:75% ">
+                              <canvas id="myChart" width="200" height="200"></canvas>
+                            </div>
+                          </div>
+                          <hr/>
+                          <br>
+                          <h2 class="wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".4s" style="padding-bottom: 5px;text-align:center; color:#cccbc8;">Prediction (for the next 30 days)</h2>
+                          <div class="container wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".4s" style="background-color:black;">
+                            <div id="pred" style="position: relative; height:75%;text-align:center; ">
+                              <canvas id="myChart2" width="200" height="200"></canvas>
+                            </div>
+                          </div>
+                          <hr/>
+                          <br>
+                          </div>
+                          <footer class="footer">
+                            <br>
+                            <div class="footer_top">
+                              <div class="container">
+                                <div class="row align-items-center">
+                                  <div class="col-lg-2 col-md-3">
+                                    <div class="footer_logo wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"><a href="index.html"><img src="img/logo.png" alt=""/></a></div>
+                                  </div>
+                                  <div class="col-xl-12 col-lg-12 col-md-9 col-sm-4" style="text-align: center;">
+                                    <div class="menu_links">
+                                      <ul>
+                                        <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" href="/#about">About</a></li>
+                                        <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" href="/#servicestag">Services</a></li>
+                                        <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s" href="/#contactus">Contact Us</a></li>
+                                        <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s" href="/faq">FAQS</a></li>
+                                        <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".7s" href="/tc">Terms And Conditions</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <!-- This section is for if we get popular and create Social Media pages for the website-->            
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="copy-right_text">
+                              <div class="container">
+                                <div class="footer_border"></div>
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                    <p class="copy_right text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">Copyright ©                   All rights reserved</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </footer>`;
+            $.post('/fetchData', { name: `#{name}`, game: `#{game}` }, function (data, status) {
+              if (data.status === 404) {
+                location.href = '/notfound';
+              }
+              document.getElementById('body').innerHTML = details + data.name + details2;
+              makeGraph(data.xAxis, data.yAxis);
+              if ('#{predictions}' == 'Not defined') {
+                document.getElementById('pred').innerHTML = '<h1>Predictions not available for this item yet. We are working to add more items. Kindly be patient and check again later</h1>';
+              }
+              if ('#{predictions}' != 'Not defined') {
+                console.log('foo');
+                var x = [];
+                for (var i = 1; i <= 30; i ++) x.push(i);
+                makeGraph2(x, '[#{predictions}]');
+              }
+            });
+          })
+    body
+      div(id='body')
+        .wrap-loader
+          .loader
+            - for (var i = 1; i <= 4; i++)
+              .box
+            .wrap-text  
+              .text
+                each val in ['L', 'O', 'A', 'D', 'I', 'N', 'G', '...']
+                  span= val
+          .loader-text 
+            img(src='images/logo.png', alt='', width='150', height='30')
+          .loader-text is fetching data. Please wait    
+include scripts

@@ -1,0 +1,303 @@
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    script.
+        document.getElementsByTagName("html")[0].className += " js";
+    link(rel='stylesheet', href='css/faqbeauty.css')
+    include libraries
+
+  body(style='background-color:black')
+    header
+      .header-area(style='background-color: black;')
+        .main-header-area
+          .container-fluid.p-0
+            .row.align-items-center.no-gutters
+              .col-xl-2.col-lg-2
+                .logo-img
+                  a(href='/')
+                    img(src='images/logo.png', alt='', width='150', height='30')
+              .col-xl-8.col-lg-8
+                .main-menu.d-none.d-lg-block.text-center
+                  nav
+                    ul#navigation
+                      li
+                        a.active(href='/' ) home
+                      li
+                        a(href='/#servicestag') services
+                      li
+                        a(href='/#tutorial') Video Tutorial
+                      li
+                        a(href='/#team') The Team
+                      li
+                        a(href='/#contactus') Contact
+                      if username
+                        li
+                          a(href='/logout') Logout
+                      else
+                        li
+                          a(href='/authenticate') Login 
+              .col-lg-2.d-none.d-lg-block
+                .log_chat_area.d-flex.align-items-end
+            .col-12
+              .mobile_menu.d-block.d-lg-none
+    br
+    br
+
+    section.cd-faq.js-cd-faq.container.max-width-md.margin-top-lg.margin-bottom-lg
+        ul.cd-faq__categories
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.1s')
+            a.cd-faq__category.cd-faq__category-selected.truncate(href='#basics',style='color:rgb(235, 231, 231)') Basics
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.2s')
+            a.cd-faq__category.truncate(href='#items' ,style='color:rgb(235, 231, 231)') Items
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.3s')
+            a.cd-faq__category.truncate(href='#account',style='color:rgb(235, 231, 231)') Steam Account
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.4s')
+            a.cd-faq__category.truncate(href='#predictions',style='color:rgb(235, 231, 231)') Predictions
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.5s')
+            a.cd-faq__category.truncate(href='#inspiration',style='color:rgb(235, 231, 231)') inspiration
+          li.wow.fadeInLeft(data-wow-duration='1s', data-wow-delay='.6s')
+            a.cd-faq__category.truncate(href='#future',style='color:rgb(235, 231, 231)') Future
+        // cd-faq__categories
+        .cd-faq__items
+          ul#basics.cd-faq__group.wow.fadeInRight(data-wow-duration='1.2s', data-wow-delay='.7s')
+            li.cd-faq__title
+              h2 Basics
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span What is Steam Quest?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Steam Quest is a website which can be used to estimate the value of a steam item value.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span What games do you currently support?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We currently support PUBG. CS:GO and DOTA-2 coming soon. 
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How do I get started?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Login with Steam and you will be able to search for any item belonging to one of these games.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Why do I need to login using my steam account?
+              .cd-faq__content
+                .text-component
+                  p
+                    | You need to login to Steam to ensure that you get the latest price values from the steam market.
+              // cd-faq__content
+          // cd-faq__group
+          ul#items.cd-faq__group.wow.fadeInLeft(data-wow-duration='1.2s', data-wow-delay='.7s')
+            li.cd-faq__title
+              h2 Items
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Item 'X' is not found
+              .cd-faq__content
+                .text-component
+                  p
+                    | Kindly check if the item you are searching for belongs to one of the supported games. Else, you may send a message to us and we will reply as soon as possible.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Can i check predictions for brand new items?
+              .cd-faq__content
+                .text-component
+                  p
+                    | While the item might be present in our servers , considering it's a new item , the predictions might not be as accurate as other older items as we will have insufficient prior price history for our model to run.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Can you add support for 'Y' game?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We understand how important it is for us to add support for as many games as possible. Kindly send a message to our team and we'll do our best to accommodate your request.
+              // cd-faq__content
+          // cd-faq__group
+          ul#account.cd-faq__group.wow.fadeInRight(data-wow-duration='1.2s', data-wow-delay='.7s')
+            li.cd-faq__title
+              h2 Steam Account
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Is having a Steam account compulsary to use your services?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Yes , you are required to login through steam to use our services.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Do you store passwords? / Is my account safe?
+              .cd-faq__content
+                .text-component
+                  p
+                    | The "Login through Steam" redirects to Steam, and returns a user-ID unique to Steam along with the information that the user is indeed THAT user. That's all that Steam Quest ever sees -- no passwords or private information. Hence our services are completely safe and no passwords are/can be stored.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How do i delete my data stored on Steam Quest?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Steam Quest does not collect your data in the first place. Hence there is no concern for 'deleting' data.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span I am unable to login through steam
+              .cd-faq__content
+                .text-component
+                  p
+                    | Kindly go to Steam's official website and check if you are able to login there. If you are able to login there , you can login to our website as well.
+              // cd-faq__content
+          // cd-faq__group
+          ul#predictions.cd-faq__group.wow.fadeInLeft(data-wow-duration='1.2s', data-wow-delay='.2s')
+            li.cd-faq__title
+              h2 Predictions
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How do you predict the future prices of items?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We use state-of-the art machine learning algorithms on a large dataset of the price history for all steam items in order to arrive at the predicitons you see on our website.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How accurate are your predictions?
+              .cd-faq__content
+                .text-component
+                  p
+                    | They're accurate enough.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Can i sue Steam Quest if the prices aren't predicted right?
+              .cd-faq__content
+                .text-component
+                  p
+                    | No you may not. Kindly refer to the Terms and Conditions page before ringing up your lawyer.
+              // cd-faq__content
+          // cd-faq__group
+          ul#inspiration.cd-faq__group.wow.fadeInRight(data-wow-duration='1.2s', data-wow-delay='.2s')
+            li.cd-faq__title
+              h2 Inspiration
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span What was the inspiration behind Steam Quest?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We're gamers as well. We invest in skins as well. We happen to be Computer Science students as well. One day, while brainstorming ideas for a hackathon our team came up with this idea to help us and feloow gamers out there to make insane profits and avoid losses while investing on skins for our favourite games.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How long did it take to develop Steam Quest?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Well the initial idea and brainstorming phase took the bulk of the time. Once we started developing the modules , it took us about a month to make Steam Quest fully functional.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How many members are in the team?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We're a team of 4.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Can i join the Steam Quest Team?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We're currently not expanding our team. However , if you'd like to offer your valuable suggestion/feedback , you may do so in the "contact us" section of Steam Quest.
+              // cd-faq__content
+          // cd-faq__group
+          ul#future.cd-faq__group.wow.fadeInLeft(data-wow-duration='1.2s', data-wow-delay='.2s')
+            li.cd-faq__title
+              h2 Future
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span Will there be a mobile version of Steam Quest?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We don't currently have plans to develop a mobile version of Steam Quest. If the demand is there we might consider it. We happen to have a few able mobile developers on the team.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How long will Steam Quest function?
+              .cd-faq__content
+                .text-component
+                  p
+                    | We aren't going away anytime soon.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How often do you update the price history of items?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Everyday.
+              // cd-faq__content
+            li.cd-faq__item
+              a.cd-faq__trigger(href='#0')
+                span How long before you add support for another game?
+              .cd-faq__content
+                .text-component
+                  p
+                    | Depends on the feedback we get. Feel free to drop your suggestions in the "Contact Us" part of Steam Quest.
+              // cd-faq__content
+          // cd-faq__group
+        // cd-faq__items
+        a.cd-faq__close-panel.text-replace(href='#0') Close
+        .cd-faq__overlay(aria-hidden='true')
+
+
+footer.footer(style='background-color:black')
+      br
+      .footer_top
+        .container
+          .row.align-items-center
+            .col-lg-2.col-md-3
+              .footer_logo.wow.fadeInRight(data-wow-duration='1s', data-wow-delay='.3s')
+                a(href='index.html')
+                  img(src='img/logo.png', alt='')
+            .col-xl-12.col-lg-12.col-md-9.col-sm-4(style='text-align: center;')
+              .menu_links
+                ul
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s', href='/#about') About
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.4s', href='/#servicestag') Services
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.5s', href='/#contactus') Contact Us
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.6s', href='/faq') FAQS
+                  li
+                    a.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.7s', href='/tc') Terms And Conditions
+            // This section is for if we get popular and create Social Media pages for the website
+      br
+      .copy-right_text
+        .container
+          .footer_border
+          .row
+            .col-xl-12
+              p.copy_right.text-center.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='1.3s')
+                | Copyright ©
+                script.
+                  document.write(new Date().getFullYear());
+                |  All rights reserved
+        script(src='js/faq.js')
+        script(src='js/util.js')
+        include scripts

@@ -1,0 +1,24 @@
+/* Header */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
+  
+  #large-header {
+    background-image: url(../images/games/PUBGbg.jpeg);
+  }
+  #large-header1 {
+    background-image: url(../images/games/CSGO_100bg.png);
+  }
+  #large-header2 {
+    background-image: url(../images/games/DotA2_100bg.jpeg);
+  }
+  
+#gamelogos{
+    padding:0px;
+}
